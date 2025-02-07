@@ -24,7 +24,7 @@ namespace MMGuideTestProject.Questions {
 
                 foreach (string line in File.ReadLines(filePath)) {
                     if (!string.IsNullOrWhiteSpace(line)) {
-                        var matches = Regex.Matches(line, @"\[(.),(.)\]");
+                        var matches = Regex.Matches(line, @"\[(.),(.)\]"); // Extract dependencies 
                         List<(char, char)> readRow = new List<(char, char)>();
 
                         foreach (Match match in matches)

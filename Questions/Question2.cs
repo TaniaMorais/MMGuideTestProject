@@ -35,7 +35,7 @@ namespace MMGuideTestProject.Questions {
                     countedList.Clear();
 
                     for (int j = 0; j < firstList.Count; j++) {
-                        int counter = firstList.Skip(j + 1).Count(c => firstList[j] > c);
+                        int counter = firstList.Skip(j + 1).Count(c => firstList[j] > c); // Count the number items smaller than the cuurent number
                         countedList.Add(counter);
                     }
                   
